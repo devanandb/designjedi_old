@@ -20,12 +20,15 @@ Route::get('articles', 'ArticlesController@index');
 
 Route::get('articles/{id}', 'ArticlesController@show');
 
-/*Route::get('{category}/articles', 'ArticlesController@showCategorywise');*/
-
 Route::get('{category}/articles', 'ArticlesController@showCategorywise');
 
+/*Route::get('{tag}/articles', 'ArticlesController@showTagwise');*/
 
-Route::get('{tag}/articles', 'ArticlesController@showTagwise');
+Route::get('{category}/articles/{title}', ['as'=>'category.articles.show', 'uses'=>'ArticlesController@showCategorywiseEach']);
 
-Route::get('{category}/articles/{id}', ['as'=>'category.articles.show', 'uses'=>'ArticlesController@showCategorywiseEach']);
+Route::get('tags/{tag}', function($tag){
+
+	$articles = Tag::whereTag($tag)->first()->articles;
+	return View::make('articles.index', compact('articles'));
+});
 /*return Article::with('tags')->has('tags')->get();   Awesome route*/

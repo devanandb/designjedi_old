@@ -21,7 +21,7 @@
 
 				<div class="each-tag">
 					{{$tag->tag}}
-					{{ link_to("$tag->tag/articles", $tag->tag) }}
+					{{ link_to("tags/$tag->tag", $tag->tag) }}
 				</div>
 			@endforeach
 		</div>
