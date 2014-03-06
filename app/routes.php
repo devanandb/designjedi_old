@@ -20,6 +20,12 @@ Route::get('articles', 'ArticlesController@index');
 
 Route::get('articles/{id}', 'ArticlesController@show');
 
+/*Route::get('{category}/articles', 'ArticlesController@showCategorywise');*/
+
 Route::get('{category}/articles', 'ArticlesController@showCategorywise');
 
+
+Route::get('{tag}/articles', 'ArticlesController@showTagwise');
+
 Route::get('{category}/articles/{id}', ['as'=>'category.articles.show', 'uses'=>'ArticlesController@showCategorywiseEach']);
+/*return Article::with('tags')->has('tags')->get();   Awesome route*/

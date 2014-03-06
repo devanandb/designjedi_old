@@ -15,6 +15,16 @@
 			</div> -->
 			{{$article->body}}
 		</div>
+
+		<div class="tags">
+			@foreach($article->tags as $tag)
+
+				<div class="each-tag">
+					{{$tag->tag}}
+					{{ link_to("$tag->tag/articles", $tag->tag) }}
+				</div>
+			@endforeach
+		</div>
 	</div>
 	@endforeach
 </div>

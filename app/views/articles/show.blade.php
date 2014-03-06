@@ -4,6 +4,6 @@
 
 <h1>{{$article->title}}</h1>
 
-{{link_to('/articles', 'Back')}}
+{{link_to('leadership/articles', 'Back')}}
 
 @stop

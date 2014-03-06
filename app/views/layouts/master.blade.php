@@ -8,9 +8,18 @@
         <meta name="author" content="">
         <link rel="shortcut icon" href="img/favicon.ico">
         <title>DesignJedi | Home</title>
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/sticky-footer-navbar.css" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet">
+        
+        <!-- Bootstrap core CSS -->
+    
+        {{ HTML::style('css/bootstrap.css') }}
+
+        {{ HTML::style('css/sticky-footer-navbar.css') }}
+        <!-- Custom styles for this template -->
+        {{ HTML::style('css/styles.css') }}
+
+        <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
+        <!-- <link href="css/sticky-footer-navbar.css" rel="stylesheet"> -->
+        <!-- <link href="css/styles.css" rel="stylesheet"> -->
     </head>
     <body ng-controller="globalController">
         <!-- Fixed navbar -->
@@ -60,9 +69,12 @@
                     <p class="text-muted">Place sticky footer content here.</p>
                 </div>
             </div>
-            <script src="js/lib/jquery.min.js"></script>
+            {{ HTML::script('js/lib/jquery.min.js') }}
+            {{ HTML::script('js/lib/bootstrap.min.js') }}
+
+            <!--script src="js/lib/jquery.min.js"></script>
             <script src="js/lib/bootstrap.min.js"></script>
-            <!--script src="js/lib/angular.min.js"></script>
+            <script src="js/lib/angular.min.js"></script>
             <script src="js/lib/angular-route.min.js"></script>
             <script src="js/app.js"></script>
             <script src="js/controllers.js"></script>

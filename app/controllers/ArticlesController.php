@@ -33,4 +33,11 @@ class ArticlesController extends BaseController
 		return View::make('articles.show', compact('article'));
 
 	}
+
+	public function showTagwise($tag) {
+		
+		$articles = Tag::whereTag($tag)->first()->articles;
+
+		return View::make('articles.index', compact('articles'));
+	}
 }

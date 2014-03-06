@@ -12,7 +12,7 @@
 					<p>User Experience leaders need to inspire. To inspire world-class design. To inspire the best talent to do the best work of their careers. Design can transform experiences and markets. UX leaders can– and need to–  find big business problems and define innovative ways to solve them, leveraging design thinking.</p>
 					<p>The question is, how do you get there? Not by following the traditional path. Let’s take a look at how great leaders of design and UX achieve results, not talk.</p>
 				</div>
-				<a href="articles" class="link-more">
+				<a href="leadership/articles" class="link-more">
 				View Articles
 				</a>
 			</div>
@@ -27,7 +27,7 @@
 					<p>If your product doesn’t delight, inspire, and engage the users it touches, it’s a missed opportunity. Just look around– great design has disrupted markets everywhere, from consumer electronic equipment and gadgets we carry with us, to our cars, our apparel, and the sites and applications we access every day.</p>
 					<p>But “Cool” isn’t just about visual appeal. It is about serving a purpose, about solving a problem. The best designs do both: They monetize well, and they engage!</p>
 				</div>
-				<a href="#/disruptive-design" class="link-more">
+				<a href="disruptive-design/articles" class="link-more">
 				View Articles
 				</a>
 			</div>
