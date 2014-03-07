@@ -59,10 +59,30 @@ body {
   font-size: 16px;
 }
 .article-blk .each-article .img-blk {
-  width: 200px;
-  height: 200px;
-  float: right;
+  /* width: 200px;
+			height: 200px;
+			float: right; */
+  margin: 15px 0px;
 }
 .article-blk .each-article .img-blk img {
   width: 100%;
+}
+.leftpane {
+  display: inline-block;
+  width: 400px;
+  float: left;
+}
+.rightpane {
+  display: inline-block;
+}
+.tags {
+  padding: 15px;
+}
+.each-tag {
+  display: inline-block;
+}
+.each-tag a {
+  padding: 6px 8px;
+  background-color: #555555;
+  color: #ffffff;
 }

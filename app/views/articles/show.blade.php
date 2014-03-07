@@ -4,6 +4,8 @@
 
 <h1>{{$article->title}}</h1>
 
-{{link_to('leadership/articles', 'Back')}}
+<a href="{{URL::previous()}}">Back</a>
+
+<!-- {{link_to(Redirect::back(), 'Back')}} -->
 
 @stop
