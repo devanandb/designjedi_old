@@ -19,7 +19,7 @@
 				<!-- <div class="img-blk">
 						<img src="img/leadership-cover.png" alt="">{$article->category->category}/articles/$article->id
 				</div> -->
-				{{$article->body}}
+				{{str_limit($article->body, $limit = 600, $end = '...')}}
 			</div>
 			
 			<div class="tags">

@@ -11,7 +11,27 @@ class TagsTableSeeder extends Seeder
 		DB::table('tags')->delete();
 
 		Tag::create([
-			'tag'=>'leadership'
+			'tag'=>'design'
+		]);
+
+		Tag::create([
+			'tag'=>'experience'
+		]);
+
+		Tag::create([
+			'tag'=>'leader'
+		]);
+
+		Tag::create([
+			'tag'=>'teams'
+		]);
+
+		Tag::create([
+			'tag'=>'ux'
+		]);
+
+		Tag::create([
+			'tag'=>'prototype'
 		]);
 
 		Tag::create([
@@ -19,27 +39,28 @@ class TagsTableSeeder extends Seeder
 		]);
 
 		Tag::create([
-			'tag'=>'mobileux'
+			'tag'=>'standards'
 		]);
-
 		Tag::create([
-			'tag'=>'design'
+			'tag'=>'interaction'
 		]);
-
 		Tag::create([
-			'tag'=>'frontend'
+			'tag'=>'gui'
 		]);
-
 		Tag::create([
-			'tag'=>'uxstudio'
+			'tag'=>'personas'
 		]);
-
 		Tag::create([
-			'tag'=>'responsive'
+			'tag'=>'mobile'
 		]);
-
 		Tag::create([
-			'tag'=>'evangelism'
+			'tag'=>'thinking'
+		]);
+		Tag::create([
+			'tag'=>'product'
+		]);
+		Tag::create([
+			'tag'=>'teams'
 		]);
 
 
