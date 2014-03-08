@@ -5,9 +5,14 @@
 	<div class="img-circle">
 		<img src="img/profile.jpg" alt="">
 	</div>
+	<div class="content-blk">
+		Hi <br>
+		<div>Lorem ipsum dolor sit amet, consectetur </div>
+		<div>adipiscing elit</div>
+	</div>
 </div>
 
-<div class="home-blk">
+<div class="home-blk clearfix">
 	<div class="row">
 		<div class="col-lg-6 col-md-6">
 			<div class="each-blk">

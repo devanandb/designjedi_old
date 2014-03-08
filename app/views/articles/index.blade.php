@@ -1,6 +1,8 @@
 @extends('layouts.master')
 @section('content')
 <div class="article-blk">
+
+<h1 style="padding-left:0px;">&nbsp;</h1>
 	
 	@foreach($articles as $article)
 	<div class="each-article row">

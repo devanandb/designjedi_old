@@ -30,7 +30,7 @@ class ArticlesController extends BaseController
 
 		$article = Category::whereCategory($category)->first()->articles()->findOrFail($articleId);
 
-		return View::make('articles.show', compact('article'));
+		return View::make('articles.show', compact('article'))->with('category', $category);
 
 	}
 

@@ -35,22 +35,11 @@
                     <a class="navbar-brand" href="/">DesignJedi</a>
                 </div>
                 <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav pull-right">
                         <li class="active"><a href="/">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">Nav header</li>
-                                <li><a href="#">Separated link</a></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="#about">Blog</a></li>
+                        <li><a href="#contact">Reache Me</a></li>
+                        
                     </ul>
                     </div><!--/.nav-collapse -->
                 </div>
@@ -66,7 +55,7 @@
             </div>
             <div id="footer">
                 <div class="container">
-                    <p class="text-muted">Place sticky footer content here.</p>
+                    <p class="text-muted text-center">All Rights Reserved &copy; 2014</p>
                 </div>
             </div>
             {{ HTML::script('js/lib/jquery.min.js') }}
