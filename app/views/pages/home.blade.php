@@ -1,5 +1,12 @@
 @extends('layouts.master')
 @section('content')
+
+<div class="hero-blk">
+	<div class="img-circle">
+		<img src="img/profile.jpg" alt="">
+	</div>
+</div>
+
 <div class="home-blk">
 	<div class="row">
 		<div class="col-lg-6 col-md-6">
