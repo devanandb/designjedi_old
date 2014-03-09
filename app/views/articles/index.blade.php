@@ -14,7 +14,7 @@
 		</div>
 		<div class="col-lg-9">
 			<h1>
-			{{ link_to_route('category.articles.show', $article->title, [$article->category->category, $article->id]) }}
+				{{ link_to_route('category.articles.show', $article->title, [$article->category->category, $article->id]) }}
 			</h1>
 			
 			<div class="article-content">

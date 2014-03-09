@@ -53,6 +53,7 @@ body {
   font-size: 26px;
   padding: 15px;
   border-bottom: 1px dashed #999999;
+  margin-top: 20px;
 }
 .article-blk .each-article .article-content {
   padding: 15px;
