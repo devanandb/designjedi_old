@@ -28,7 +28,7 @@ Route::get('{category}/articles/{title}', ['as'=>'category.articles.show', 'uses
 
 Route::get('tags/{tag}', function($tag){
 
-	$articles = Tag::whereTag($tag)->first()->articles;
-	return View::make('articles.index', compact('articles'));
+	$articles = Article::with('tags')->has('tags')->get();
+	return $articles;
 });
 /*return Article::with('tags')->has('tags')->get();   Awesome route*/

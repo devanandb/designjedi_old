@@ -43,12 +43,4 @@ class ArticlesController extends BaseController
 
 
 
-	 
-	public static function words($value, $words = 100, $end = '...') {
-
-		preg_match('/^\s*+(?:\S++\s*+){1,'.$words.'}/u', $value, $matches);
-		if ( ! isset($matches[0])) return $value;
-		if (strlen($value) == strlen($matches[0])) return $value;
-		return rtrim($matches[0]).$end;
-	}
 }
