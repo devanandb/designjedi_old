@@ -22,13 +22,13 @@ Route::get('articles/{id}', 'ArticlesController@show');
 
 Route::get('{category}/articles', 'ArticlesController@showCategorywise');
 
-/*Route::get('{tag}/articles', 'ArticlesController@showTagwise');*/
+Route::get('tags/{tag}', 'ArticlesController@showTagwise');
 
 Route::get('{category}/articles/{title}', ['as'=>'category.articles.show', 'uses'=>'ArticlesController@showCategorywiseEach']);
 
-Route::get('tags/{tag}', function($tag){
+// Route::get('tags/{tag}', function($tag){
 
-	$articles = Article::with('tags')->has('tags')->get();
-	return $articles;
-});
+// 	$articles = Article::with('tags')->has('tags')->get();
+// 	return $articles;
+// });
 /*return Article::with('tags')->has('tags')->get();   Awesome route*/
