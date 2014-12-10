@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'designjedi',
-			'username'  => 'root',
-			'password'  => 'root',
+			'database'  => 'forge',
+			'username'  => 'forge',
+			'password'  => 'to3wDFC54hanAl6p1qqf',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
