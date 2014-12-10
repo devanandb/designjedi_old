@@ -11,9 +11,11 @@
         
         <!-- Bootstrap core CSS -->
     
-        {{ HTML::style('css/bootstrap.css') }}
+        {{ HTML::style('css/uikit.min.css') }}
+        {{ HTML::style('css/components/cover.min.css') }}
 
-        {{ HTML::style('css/sticky-footer-navbar.css') }}
+
+        <!-- {{ HTML::style('css/sticky-footer-navbar.css') }} -->
         <!-- Custom styles for this template -->
         {{ HTML::style('css/styles.css') }}
 
@@ -21,52 +23,55 @@
         <!-- <link href="css/sticky-footer-navbar.css" rel="stylesheet"> -->
         <!-- <link href="css/styles.css" rel="stylesheet"> -->
     </head>
-    <body ng-controller="globalController">
-        <!-- Fixed navbar -->
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/">DesignJedi</a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav pull-right">
-                        <li class="active"><a href="/">Home</a></li>
-                        <li><a href="#about">Blog</a></li>
-                        <li><a href="#contact">Reache Me</a></li>
-                        
-                    </ul>
-                    </div><!--/.nav-collapse -->
-                </div>
-            </div>
-            <!-- Begin page content -->
-            <div class="container">
-                <div ng-view>
-                    
-                </div>
+    <body>
 
-                @yield('content')
+        @yield('content')
 
+        
+        <footer>
+            <div class="uk-container-center uk-container">
+                &copy; Copyright Jim Nieters, 2007 - 2014
+                <ul class="social-links uk-list">
+                    <li>
+                        <a href="">
+                        <i class="uk-icon-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><i class="uk-icon-linkedin-square"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="uk-icon-twitter-square"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="uk-icon-rss-square"></i></a>
+                    </li>
+                </ul>
             </div>
-            <div id="footer">
-                <div class="container">
-                    <p class="text-muted text-center">All Rights Reserved &copy; 2014</p>
-                </div>
-            </div>
-            {{ HTML::script('js/lib/jquery.min.js') }}
-            {{ HTML::script('js/lib/bootstrap.min.js') }}
 
-            <!--script src="js/lib/jquery.min.js"></script>
-            <script src="js/lib/bootstrap.min.js"></script>
-            <script src="js/lib/angular.min.js"></script>
-            <script src="js/lib/angular-route.min.js"></script>
-            <script src="js/app.js"></script>
-            <script src="js/controllers.js"></script>
-            <script src="js/routes.js"></script-->
-        </body>
-    </html>
+            
+        </footer>
+
+
+        {{ HTML::script('js/lib/jquery.min.js') }}
+        {{ HTML::script('js/uikit.min.js') }}
+        {{ HTML::script('js/lib/imagesloaded.pkgd.min.js') }}
+        {{ HTML::script('js/lib/masonry.pkgd.min.js') }}
+
+        <script>
+            var $container = $('.uk-grid');
+
+            $container.imagesLoaded( function() {
+                
+                 $container.masonry({
+                      columnWidth: '.uk-width-medium-1-3',
+                      itemSelector: '.uk-width-medium-1-3'
+                    });
+            });
+                // initialize
+           
+        </script>
+
+
+    </body>
+</html>
