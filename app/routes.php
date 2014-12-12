@@ -12,7 +12,9 @@
 */
 /*Blade::setContentTags('<%', '%>'); 		// for variables and all things Blade
 Blade::setEscapedContentTags('<%%', '%%>'); 	// for escaped data*/
-
+Route::get('/checkenv', function() {
+	return getenv('DB_PASSWORD');
+});
 
 Route::get('/', ['as'=> 'home', 'uses'=>'PageController@home']);
 
