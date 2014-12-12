@@ -1,4 +1,8 @@
 /* define mixin */
+body {
+  position: relative;
+  z-index: 0;
+}
 h1.pg-hero {
   text-align: center;
   margin-top: 60px;
@@ -12,10 +16,74 @@ h1.pg-hero {
   font-weight: 700;
 }
 .pg-blocks {
-  margin: 40px 0px;
+  /*margin:40px 0px;*/
 }
 .panel-header {
   font-size: 18px;
+}
+.uk-navbar {
+  z-index: 100;
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+}
+.uk-navbar-nav > li.uk-active > a {
+  background-color: transparent;
+  border-bottom: 2px solid #e0684b;
+}
+.uk-navbar-nav > li > a {
+  font-size: 14px;
+}
+.pg-header {
+  background: #e0684b url(../img/bg-pattern.png) 0 -204px repeat;
+  color: #F5F5F5;
+  padding: 60px 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: bgscroll 30s infinite linear;
+  overflow: hidden;
+  /*margin-bottom: 100px;*/
+}
+.pg-header h1 {
+  font-weight: 300;
+  color: #F5F5F5;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+.pg-header p {
+  font-weight: 200;
+  font-size: 20px;
+  margin: 0px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  color: #eee;
+  line-height: 28px;
+}
+.pg-header h1.article-header {
+  text-transform: none;
+}
+@keyframes "bgscroll" {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -300px;
+  }
+}
+@-webkit-keyframes "bgscroll" {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -300px;
+  }
+}
+@-ms-keyframes "bgscroll" {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -300px;
+  }
 }
 .hero-blk {
   background-image: url(../img/life/cvr4.jpg);
@@ -37,10 +105,16 @@ h1.pg-hero {
 }
 .pg-home {
   background-color: #f5f5f5;
-  padding: 60px 0px;
+  padding: 100px 0px;
 }
 .clearfix {
   clear: both;
+}
+.uk-navbar {
+  /*visibility: hidden;*/
+}
+.uk-navbar.uk-visible {
+  /*visibility: visible !important;*/
 }
 .pg-blocks .uk-panel {
   background-color: #fff;
@@ -86,7 +160,8 @@ h1.pg-hero {
   transition: all 0.5s ease-in-out;
 }
 .pg-articles {
-  background-color: #f5f5f5;
+  padding-top: 60px;
+  background-color: #F1F1F1;
 }
 .each-article .img-blk img {
   width: 100%;
@@ -112,6 +187,15 @@ h1.pg-hero {
 .cnt-tags .each-tag:hover a,
 .cnt-tags .each-tag:hover i {
   color: #7b8aa8;
+}
+.pg-each-article {
+  min-height: 600px;
+  padding-top: 60px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.teaser-img-blk img {
+  width: 100%;
 }
 footer {
   text-align: left;

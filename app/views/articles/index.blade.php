@@ -1,5 +1,43 @@
 @extends('layouts.master')
 @section('content')
+
+<!-- <nav class="uk-navbar" data-uk-sticky="{top:-400, animation: 'uk-animation-slide-top', clsactive: 'uk-visible'}">
+    <ul class="uk-navbar-nav">
+        <li class="uk-active"><a href=""><i class="uk-icon-home"></i></a></li>
+        <li><a href="">Leadership</a></li>
+        <li><a href="">Disruptive Design</a></li>
+        <li><a href="">Life</a></li>
+
+
+        
+    </ul>
+</nav> -->
+<div class="pg-header">
+	<div class="uk-container-center uk-container ">
+
+		@if (isset($pgtitle))
+			<h1>{{ $pgtitle->category }}</h1>
+			<p> {{ $pgtitle->desc }}</p>
+		@endif
+
+		@if (isset($tagtitle))
+			<h1> <i class="uk-icon-tags"></i> {{ $tagtitle->tag }} </h1>
+		@endif
+	</div>
+</div>
+
+
+<nav class="uk-navbar" data-uk-sticky="{top:-400, animation: 'uk-animation-slide-top', clsactive: 'uk-visible'}">
+
+	<div class="uk-container-center uk-container ">
+	    <ul class="uk-navbar-nav">
+	        <li><a href="/"><i class="uk-icon-home"></i></a></li>
+	        <li class="uk-active"><a href="/leadership/articles">Leadership</a></li>
+	        <li><a href="/disruptive-design/articles">Disruptive Design</a></li>
+	        <li><a href="/">Life</a></li>
+	    </ul>
+	</div>
+</nav>
 <div class="pg-articles">
 	<div class="uk-container-center uk-container ">
 	

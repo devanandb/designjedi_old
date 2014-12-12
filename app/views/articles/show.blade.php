@@ -2,31 +2,61 @@
 
 @section('content')
 
-<div class="row article-page">
-	<div class="col-lg-2">
-		<div class="sidebar">Sidebar</div>
+<div class="pg-header">
+	<div class="uk-container-center uk-container ">
+
+		<!-- @if (isset($pgtitle))
+			<h1>{{ $pgtitle->category }}</h1>
+			<p> {{ $pgtitle->desc }}</p>
+		@endif
+
+		@if (isset($tagtitle))
+			<h1> <i class="uk-icon-tags"></i> {{ $tagtitle->tag }} </h1>
+		@endif -->
+		<h1 class="article-header">{{$article->title}}</h1>
 	</div>
-	<div class="col-lg-8 each-article-blk">
-		<div class="the-article">
-			<h1>{{$article->title}}</h1>
+</div>
 
-			<div class="img-blk">
-				{{ HTML::image("img/articles/each/$article->id.png") }}
-			</div>
+<nav class="uk-navbar" data-uk-sticky="{top:-400, animation: 'uk-animation-slide-top', clsactive: 'uk-visible'}">
 
-			<div class="content">
-				{{$article->body}}
+	<div class="uk-container-center uk-container ">
+	    <ul class="uk-navbar-nav">
+	        <li class="uk-active"><a href="/"><i class="uk-icon-home"></i></a></li>
+	        <li><a href="/leadership/articles">Leadership</a></li>
+	        <li><a href="/disruptive-design/articles">Disruptive Design</a></li>
+	        <li><a href="/">Life</a></li>
+	    </ul>
+	</div>
+</nav>
+
+<div class="pg-each-article uk-clearfix uk-nbfc">
+	<div class="uk-container-center uk-container uk-clearfix">
+
+		<div class="uk-grid uk-clearfix">
+		<div class="uk-width-6-10">
+				<div class="article-content">
+					{{$article->body}}
+				</div>
 			</div>
+			<div class="uk-width-4-10">
+				<div class="teaser-img-blk">
+					{{ HTML::image("img/articles/each/$article->id.png") }}
+				</div>
+			</div>
+			
+			
 		</div>
 	</div>
-	<div class="col-lg-2">
-		<div class="sidebar">sidebar</div>
-	</div>
+
+	<div class="clearfix">&nbsp;</div>
+
 </div>
 
 
 
-<a href="{{URL::previous()}}">Back</a>
+
+
+<!-- <a href="{{URL::previous()}}">Back</a> -->
 
 <!-- {{link_to(Redirect::back(), 'Back')}} -->
 

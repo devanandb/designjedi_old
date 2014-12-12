@@ -13,6 +13,8 @@
     
         {{ HTML::style('css/uikit.min.css') }}
         {{ HTML::style('css/components/cover.min.css') }}
+        {{ HTML::style('css/components/sticky.min.css') }}
+
 
 
         <!-- {{ HTML::style('css/sticky-footer-navbar.css') }} -->
@@ -26,9 +28,11 @@
     <body>
 
         @yield('content')
-
         
-        <footer>
+
+        <!-- <div class="uk-clearfix">&nbsp;</div> -->
+        
+        <footer class='uk-nbfc'>
             <div class="uk-container-center uk-container">
                 &copy; Copyright Jim Nieters, 2007 - 2014
                 <ul class="social-links uk-list">
@@ -55,6 +59,8 @@
 
         {{ HTML::script('js/lib/jquery.min.js') }}
         {{ HTML::script('js/uikit.min.js') }}
+        {{ HTML::script('js/components/sticky.min.js') }}
+
         {{ HTML::script('js/lib/imagesloaded.pkgd.min.js') }}
         {{ HTML::script('js/lib/masonry.pkgd.min.js') }}
 

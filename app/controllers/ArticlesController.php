@@ -23,7 +23,9 @@ class ArticlesController extends BaseController
 
 		$articles = Category::whereCategory($category)->first()->articles;
 
-		return View::make('articles.index', compact('articles'));
+		$pgtitle = Category::whereCategory($category)->first();
+
+		return View::make('articles.index', compact('articles', 'pgtitle'));
 	}
 
 	public function showCategorywiseEach($category, $articleId) {
@@ -38,7 +40,9 @@ class ArticlesController extends BaseController
 		
 		$articles = Tag::whereTag($tag)->first()->articles;
 
-		return View::make('articles.index', compact('articles'));
+		$tagtitle = Tag::whereTag($tag)->first();
+
+		return View::make('articles.index', compact('articles','tagtitle'));
 	}
 
 
