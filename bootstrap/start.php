@@ -25,14 +25,14 @@ $app = new Illuminate\Foundation\Application;
 */
 
 
-// $env = $app->detectEnvironment(array(
+$env = $app->detectEnvironment(array(
 
-// 	'local' => array('your-machine-name'),
+	'local' => 'Devanands-MacBook-Pro-2.local',
 
-// ));
-$env = $app->detectEnvironment(function(){
-	return getenv('APP_ENV') ?: 'local';
-});
+));
+// $env = $app->detectEnvironment(function(){
+// 	return getenv('APP_ENV') ?: 'local';
+// });
 
 /*
 |--------------------------------------------------------------------------
