@@ -17,6 +17,9 @@ Route::get('/checkenv', function() {
 });
 
 Route::get('/', ['as'=> 'home', 'uses'=>'PageController@home']);
+Route::get('/home-2', ['as'=> 'home2', 'uses'=>'PageController@home2']);
+Route::get('/home-3', ['as'=> 'home3', 'uses'=>'PageController@home3']);
+
 
 Route::get('articles', 'ArticlesController@index');
 

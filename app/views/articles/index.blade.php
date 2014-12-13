@@ -44,7 +44,7 @@
 		
 		
 		<div class="pg-blocks">
-			<div class="uk-grid">
+			<div class="uk-grid matrix">
 				@foreach($articles as $article)
 					<!-- <div class="uk-width-1-2 each-article">
 						

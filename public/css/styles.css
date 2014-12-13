@@ -103,6 +103,24 @@ h1.pg-hero {
   font-weight: 100;
   letter-spacing: 2px;
 }
+.hero-blk-2 {
+  background-image: url(../img/life/cvr3.jpg);
+}
+.hero-blk-2 .pg-hero {
+  margin: 0px;
+  border: 0px;
+  color: #eee;
+  text-align: right;
+  padding-top: 250px;
+}
+.hero-blk-2 .pg-hero span {
+  background: rgba(35, 35, 35, 0.8);
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
 .pg-home {
   background-color: #f5f5f5;
   padding: 100px 0px;
@@ -182,11 +200,11 @@ h1.pg-hero {
 }
 .cnt-tags .each-tag:hover {
   cursor: pointer;
-  border: 1px solid #7b8aa8;
+  border: 1px solid #fc8383;
 }
 .cnt-tags .each-tag:hover a,
 .cnt-tags .each-tag:hover i {
-  color: #7b8aa8;
+  color: #fc8383;
 }
 .pg-each-article {
   min-height: 600px;

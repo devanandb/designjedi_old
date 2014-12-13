@@ -21,7 +21,7 @@
 
 	<div class="uk-container-center uk-container ">
 	    <ul class="uk-navbar-nav">
-	        <li class="uk-active"><a href="/"><i class="uk-icon-home"></i></a></li>
+	        <li><a href="/"><i class="uk-icon-home"></i></a></li>
 	        <li><a href="/leadership/articles">Leadership</a></li>
 	        <li><a href="/disruptive-design/articles">Disruptive Design</a></li>
 	        <li><a href="/">Life</a></li>
@@ -29,10 +29,10 @@
 	</div>
 </nav>
 
-<div class="pg-each-article uk-clearfix uk-nbfc">
-	<div class="uk-container-center uk-container uk-clearfix">
+<div class="pg-each-article">
+	<div class="uk-container-center uk-container">
 
-		<div class="uk-grid uk-clearfix">
+		<div class="uk-grid">
 		<div class="uk-width-6-10">
 				<div class="article-content">
 					{{$article->body}}
