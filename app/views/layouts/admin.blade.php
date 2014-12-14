@@ -15,7 +15,7 @@
         {{ HTML::style('css/components/cover.min.css') }}
         {{ HTML::style('css/components/sticky.min.css') }}
         
-        {{ HTML::syle('css/lib/codemirror.css') }}
+        {{ HTML::style('css/lib/codemirror.css') }}
 
         {{ HTML::script('js/lib/jquery.min.js') }}
         {{ HTML::script('js/uikit.min.js') }}
@@ -83,19 +83,7 @@
 
         
 
-        <script>
-            var $container = $('.uk-grid');
-
-            $container.imagesLoaded( function() {
-                
-                 $container.masonry({
-                      columnWidth: '.uk-width-medium-1-3',
-                      itemSelector: '.uk-width-medium-1-3'
-                    });
-            });
-                // initialize
-           
-        </script>
+      
 
 
     </body>

@@ -227,6 +227,7 @@ h1.pg-hero {
 		border-bottom-width: 2px;
 		margin-bottom: 30px;
 		.uk-panel-teaser {
+			position: relative;
 			img {
 				width: 100%;
 			}
@@ -263,12 +264,23 @@ h1.pg-hero {
 			letter-spacing: 3px;
 			font-weight: 300;
 			top: 0px;
-			height: 210px;
-			line-height: 210px;
+			/*height: 210px;*/
+			/*line-height: 210px;*/
 			padding-left: 10px;
 			padding-right: 10px;
 			background: rgba(35, 35, 35, 0.4);
-			/* bottom: 0px; */
+			bottom: 0px;
+			> div {
+				vertical-align: middle;
+				display: inline-block;
+				font-size: 22px;
+			}
+			a {
+				color: #fdfdfd;
+				letter-spacing: 2px;
+				line-height: 24px;
+				font-size: 18px;
+			}
 		}
 
 	}

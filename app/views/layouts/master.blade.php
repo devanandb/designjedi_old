@@ -58,8 +58,16 @@
 
                 var count = $('a.each-tg').length;
                 var back = ["#3fc380","#89c4f4","#e08283", "#b388dd", "#fec956"];
+                var hcolor = ["#e0684b","#333333","#135a7b", "#9551d8", "#fec956"];
                 
-                
+
+                var hrand = hcolor[Math.floor(Math.random() * hcolor.length)];
+
+                $('.pg-header').css('background-color', hrand);
+                $('.uk-navbar-nav > li.uk-active > a').css('background-color', hrand);
+                $('.uk-navbar').css('border-bottom-color', hrand);
+
+
 
                 for (var i = 0; i < count; i++) {
                     var rand = back[Math.floor(Math.random() * back.length)];

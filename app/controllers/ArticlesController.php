@@ -53,4 +53,14 @@ class ArticlesController extends BaseController
 
 
 
+
+	public function create()
+	{
+		// $articles = Article::all();
+
+		return View::make('articles.create');
+	}
+
+
+
 }

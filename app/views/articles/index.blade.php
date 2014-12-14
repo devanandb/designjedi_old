@@ -68,14 +68,18 @@
 					</div> -->
 			
 					<div class="uk-width-medium-1-3 clearfix">
+
+						
 				        <div class="uk-panel uk-panel-box" title="{{$article->title}}">
+
 				        	<div class="uk-panel-teaser">
 				        		{{ HTML::image("img/articles/$article->id.png") }}
+				        		<div class="headings-p panel-header uk-vertical-align">
+				        			<div class="uk-vertical-align-middle uk-width-9-10">{{ link_to_route('category.articles.show', $article->title, [$article->category->category, $article->id]) }}</div>
+				        		</div>
 				        	</div>
 				        	<div class="panel-content">
-				        		<div class="headings panel-header uk-text-truncate">
-				        			{{ link_to_route('category.articles.show', $article->title, [$article->category->category, $article->id]) }}
-				        		</div>
+				        		
 				        		<p>{{str_limit($article->body, $limit = 200, $end = '...')}}</p>
 				        	</div>
 

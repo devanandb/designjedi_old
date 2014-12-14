@@ -39,3 +39,5 @@ Route::get('{category}/articles/{title}', ['as'=>'category.articles.show', 'uses
 // 	return $articles;
 // });
 /*return Article::with('tags')->has('tags')->get();   Awesome route*/
+
+Route::get('/admin/create', 'ArticlesController@create');

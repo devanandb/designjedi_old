@@ -199,6 +199,9 @@ h1.pg-hero {
   border-bottom-width: 2px;
   margin-bottom: 30px;
 }
+.pg-blocks .uk-panel .uk-panel-teaser {
+  position: relative;
+}
 .pg-blocks .uk-panel .uk-panel-teaser img {
   width: 100%;
 }
@@ -233,12 +236,23 @@ h1.pg-hero {
   letter-spacing: 3px;
   font-weight: 300;
   top: 0px;
-  height: 210px;
-  line-height: 210px;
+  /*height: 210px;*/
+  /*line-height: 210px;*/
   padding-left: 10px;
   padding-right: 10px;
   background: rgba(35, 35, 35, 0.4);
-  /* bottom: 0px; */
+  bottom: 0px;
+}
+.pg-blocks .uk-panel .headings-p > div {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 22px;
+}
+.pg-blocks .uk-panel .headings-p a {
+  color: #fdfdfd;
+  letter-spacing: 2px;
+  line-height: 24px;
+  font-size: 18px;
 }
 .pg-blocks a:hover {
   text-decoration: none;
@@ -278,11 +292,11 @@ h1.pg-hero {
 }
 .cnt-tags .each-tag:hover {
   cursor: pointer;
-  border: 1px solid #7b8aa8;
+  border: 1px solid #00add5;
 }
 .cnt-tags .each-tag:hover a,
 .cnt-tags .each-tag:hover i {
-  color: #7b8aa8;
+  color: #00add5;
 }
 .pg-each-article {
   min-height: 600px;
