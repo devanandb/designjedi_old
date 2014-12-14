@@ -30,9 +30,9 @@ class ArticlesController extends BaseController
 
 	public function showCategorywiseEach($category, $articleId) {
 
-		$article = Category::whereCategory($category)->first()->articles()->findOrFail($articleId);
+		$article = Category::whereCategory($category)->first()->articles()->with('tags')->findOrFail($articleId);
 
-		return View::make('articles.show', compact('article'))->withPagetitle('asdas');
+		return View::make('articles.show', compact('article'));
 
 	}
 

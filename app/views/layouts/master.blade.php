@@ -63,7 +63,9 @@
 
                 for (var i = 0; i < count; i++) {
                     var rand = back[Math.floor(Math.random() * back.length)];
-                    $('a.each-tg').eq(i).css('background',rand);
+                    $('a.each-tg').eq(i).find('.tag-part').css('background',rand);
+                    $('a.each-tg').eq(i).find('.arrow-left').css('border-right-color',rand);
+
                 };
                 // $('div').css('background',rand);
             });

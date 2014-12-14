@@ -20,11 +20,22 @@
 	</div>
 </div>
 
+<div class="uk-container-center uk-container tag-bar">
+	<div class="cnt-tags">
+		@foreach($article->tags as $tag)
+		
+		<div class="each-tag">
+			<i class="uk-icon-tag"></i> {{ link_to("tags/$tag->tag", $tag->tag) }}
+		</div>
+		@endforeach
+	</div>
+</div>
+
 
 
 <div class="pg-each-article">
 	<div class="uk-container-center uk-container">
-
+		
 		<div class="uk-grid">
 		<div class="uk-width-6-10">
 				<div class="article-content">

@@ -38,11 +38,11 @@
 				@foreach($tags as $tag)
 					
 			
-					<div class="uk-width-medium-1-5 clearfix">
+					<div class="uk-width-medium-1-6">
 				        <a href="tags/{{$tag->tag}}" class="uk-panel each-tg uk-panel-box uk-text-center" >
 				        	
-				        	{{$tag->tag}}
-
+				        	<div class="arrow-left"></div> <div class="tag-part">{{$tag->tag}}</div>
+							<div class="hole"></div>
 				        	
 				        </a>
 				    </div>
