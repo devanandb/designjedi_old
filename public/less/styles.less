@@ -5,6 +5,10 @@
 }
 .generateColor();
 
+html, body {
+	/*height: 100%;*/
+}
+
 body {
 	position: relative;
 	z-index: 0;
@@ -18,6 +22,15 @@ h1.pg-hero {
 	border-bottom:1px solid #ddd;
 	border-top:1px solid #ddd;
 
+}
+
+.each-tg {
+	color: #f6f6f6;
+	font-size: 22px;
+	border:0px !important;
+	&:hover {
+		color:#ffffff;
+	}
 }
 
 .headings {
@@ -36,16 +49,22 @@ h1.pg-hero {
 .uk-navbar {
 	z-index: 100;
 	background-color: #fff;
-	border-bottom: 2px solid #ddd;
+	border-bottom: 1px solid #e0684b;
 }
 
 .uk-navbar-nav>li.uk-active>a {
-	background-color: transparent;
-	border-bottom: 2px solid #e0684b;
+	background-color: #e0684b;
+	/*border-bottom: 2px solid #e0684b;*/
+	color: #ffffff;
+
 }
 
 .uk-navbar-nav>li>a {
 	font-size: 14px;
+	i.uk-icon-home {
+		font-size: 24px;
+		margin-top: 8px;
+	}
 }
 
 .pg-header {
@@ -145,6 +164,7 @@ h1.pg-hero {
 .pg-home {
 	background-color: #f5f5f5;
 	padding: 100px 0px;
+	/*height: 100%;*/
 	
 }
 .clearfix {
@@ -212,6 +232,7 @@ h1.pg-hero {
 .pg-articles {
 	padding-top: 60px;
 	background-color: #F1F1F1;
+	/*height: 100%;*/
 }
 
 .each-article {

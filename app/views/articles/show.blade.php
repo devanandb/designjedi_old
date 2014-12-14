@@ -2,6 +2,9 @@
 
 @section('content')
 
+
+@include('layouts.navbar')
+
 <div class="pg-header">
 	<div class="uk-container-center uk-container ">
 
@@ -17,17 +20,7 @@
 	</div>
 </div>
 
-<nav class="uk-navbar" data-uk-sticky="{top:-400, animation: 'uk-animation-slide-top', clsactive: 'uk-visible'}">
 
-	<div class="uk-container-center uk-container ">
-	    <ul class="uk-navbar-nav">
-	        <li><a href="/"><i class="uk-icon-home"></i></a></li>
-	        <li><a href="/leadership/articles">Leadership</a></li>
-	        <li><a href="/disruptive-design/articles">Disruptive Design</a></li>
-	        <li><a href="/">Life</a></li>
-	    </ul>
-	</div>
-</nav>
 
 <div class="pg-each-article">
 	<div class="uk-container-center uk-container">

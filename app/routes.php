@@ -29,6 +29,8 @@ Route::get('{category}/articles', 'ArticlesController@showCategorywise');
 
 Route::get('tags/{tag}', 'ArticlesController@showTagwise');
 
+Route::get('tags', 'ArticlesController@showTags');
+
 Route::get('{category}/articles/{title}', ['as'=>'category.articles.show', 'uses'=>'ArticlesController@showCategorywiseEach']);
 
 // Route::get('tags/{tag}', function($tag){

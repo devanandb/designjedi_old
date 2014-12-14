@@ -45,6 +45,12 @@ class ArticlesController extends BaseController
 		return View::make('articles.index', compact('articles','tagtitle'));
 	}
 
+	public function showTags() {
+		$tags = Tag::all();
+
+		return View::make('pages.tags', compact('tags'));
+	}
+
 
 
 }

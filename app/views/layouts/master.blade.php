@@ -53,6 +53,20 @@
                     });
             });
                 // initialize
+
+            $(document).ready(function () {
+
+                var count = $('a.each-tg').length;
+                var back = ["#3fc380","#89c4f4","#e08283", "#b388dd", "#fec956"];
+                
+                
+
+                for (var i = 0; i < count; i++) {
+                    var rand = back[Math.floor(Math.random() * back.length)];
+                    $('a.each-tg').eq(i).css('background',rand);
+                };
+                // $('div').css('background',rand);
+            });
            
         </script>
 
