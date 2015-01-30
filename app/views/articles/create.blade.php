@@ -6,7 +6,9 @@
 @include('layouts.navbar')
 
 
-
+<div class="uk-container-center uk-container">
+	
+</div>
 
 
 

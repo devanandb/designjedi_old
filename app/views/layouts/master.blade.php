@@ -14,7 +14,8 @@
         {{ HTML::style('css/uikit.min.css') }}
         {{ HTML::style('css/components/cover.min.css') }}
         {{ HTML::style('css/components/sticky.min.css') }}
-
+        
+        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 
 
         <!-- {{ HTML::style('css/sticky-footer-navbar.css') }} -->
@@ -64,8 +65,8 @@
                 var hrand = hcolor[Math.floor(Math.random() * hcolor.length)];
 
                 $('.pg-header').css('background-color', hrand);
-                $('.uk-navbar-nav > li.uk-active > a').css('background-color', hrand);
-                $('.uk-navbar').css('border-bottom-color', hrand);
+                // $('.uk-navbar-nav > li.uk-active > a').css('background-color', hrand);
+                // $('.uk-navbar').css('border-bottom-color', hrand);
 
 
 

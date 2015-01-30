@@ -75,20 +75,49 @@ h1.pg-hero {
 }
 .uk-navbar {
   z-index: 100;
-  background-color: #fff;
-  border-bottom: 1px solid #e0684b;
+  background: transparent;
+  /*border-bottom: 1px solid #e0684b;*/
+  position: absolute;
+  width: 100%;
 }
 .uk-navbar-nav > li.uk-active > a {
-  background-color: #e0684b;
+  background-color: transparent;
   /*border-bottom: 2px solid #e0684b;*/
   color: #ffffff;
 }
+.logo {
+  font-family: 'Indie Flower', cursive !important;
+  font-size: 28px !important;
+  padding-top: 10px !important;
+  padding-left: 0px !important;
+}
 .uk-navbar-nav > li > a {
   font-size: 14px;
+  color: #eaeaea;
 }
 .uk-navbar-nav > li > a i.uk-icon-home {
   font-size: 24px;
   margin-top: 8px;
+}
+.uk-navbar-nav > li > a:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+.down-arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 49%;
+  color: #ffffff;
+  font-size: 40px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  /*padding:10px;*/
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.down-arrow a {
+  color: #ffffff;
 }
 .pg-header {
   background: #e0684b url(../img/bg-pattern.png) 0 -204px repeat;
@@ -97,6 +126,7 @@ h1.pg-hero {
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-animation: bgscroll 30s infinite linear;
   overflow: hidden;
+  padding-top: 100px;
   /*margin-bottom: 100px;*/
 }
 .pg-header h1 {
@@ -144,6 +174,7 @@ h1.pg-hero {
 }
 .hero-blk {
   background-image: url(../img/life/cvr4.jpg);
+  position: relative;
 }
 .hero-blk .pg-hero {
   margin: 0px;
@@ -161,22 +192,24 @@ h1.pg-hero {
   letter-spacing: 2px;
 }
 .hero-blk-2 {
-  background-image: url(../img/life/cvr3.jpg);
+  background-image: url(../img/jleadership.jpeg);
+  position: relative;
 }
 .hero-blk-2 .pg-hero {
   margin: 0px;
   border: 0px;
   color: #eee;
-  text-align: right;
+  text-align: left;
   padding-top: 250px;
 }
 .hero-blk-2 .pg-hero span {
   background: rgba(35, 35, 35, 0.8);
   display: inline-block;
-  margin-bottom: 8px;
-  padding: 6px 12px;
+  margin-bottom: 4px;
+  padding: 4px 8px;
   font-weight: 100;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font-size: 20px;
 }
 .pg-home {
   background-color: #f5f5f5;
@@ -292,11 +325,11 @@ h1.pg-hero {
 }
 .cnt-tags .each-tag:hover {
   cursor: pointer;
-  border: 1px solid #00add5;
+  border: 1px solid #fc8383;
 }
 .cnt-tags .each-tag:hover a,
 .cnt-tags .each-tag:hover i {
-  color: #00add5;
+  color: #fc8383;
 }
 .pg-each-article {
   min-height: 600px;

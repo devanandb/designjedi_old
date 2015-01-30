@@ -6,6 +6,19 @@
 	<h1 class="pg-hero">
 		<span> I am a senior UX leader </span><br> <span>who loves to inspire </span><br> <span>and be inspired by design</span> 
 	</h1>
+	<div class="down-arrow">
+		<a href="#leadership" data-uk-smooth-scroll><i class="uk-icon-angle-down"></i></a>
+	</div>
+</div>
+
+<div id="leadership" class="hero-blk-2 uk-cover-background uk-height-viewport">
+	<h1 class="pg-hero">
+		<span>Great UX leaders need to inspire </span><br><span> world-class design, to inspire the best talent</span><br><span> to do the best work of their careers.</span> <br><span>It can transform experiences and industries</span>
+	</h1>
+
+	<div class="down-arrow">
+		<a href=""><i class="uk-icon-angle-down"></i></a>
+	</div>
 </div>
 
 
