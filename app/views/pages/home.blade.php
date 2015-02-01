@@ -17,11 +17,31 @@
 	</h1>
 
 	<div class="down-arrow">
-		<a href=""><i class="uk-icon-angle-down"></i></a>
+		<a href="#design" data-uk-smooth-scroll><i class="uk-icon-angle-down"></i></a>
 	</div>
 </div>
 
+<div id="design" class="hero-blk-3 uk-cover-background uk-height-viewport">
+	<h1 class="pg-hero">
+		<span>If your product doesn’t delight, inspire, and engage</span>
+		<br>
+		<span>the users it touches, it’s a missed opportunity.</span>
+		<br>
+		<span>Just look around– great design has disrupted</span>
+		<br>
+		<span>markets everywhere, from consumer electronic equipment</span>
+		<br>
+		<span>and gadgets we carry with us, to our cars, our apparel,</span>
+		<br>
+		<span>and the sites and applications we access every day.</span>
+		<br>
+		<span>But “Cool” isn’t just about visual appeal</span>
+	</h1>
 
+	<div class="down-arrow">
+		<a href=""><i class="uk-icon-angle-down"></i></a>
+	</div>
+</div>
 <div class="pg-home">
 	<div class="uk-container-center uk-container ">
 	

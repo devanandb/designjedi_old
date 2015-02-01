@@ -1,4 +1,4 @@
-var app = angular.module('eventApp', ['ngRoute'])
+var app = angular.module('jedi', [])
 
 
 

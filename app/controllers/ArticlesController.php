@@ -13,6 +13,13 @@ class ArticlesController extends BaseController
 		return View::make('articles.index', compact('articles'));
 	}
 
+	// For API
+
+	public function apiarticles() {
+		$articles = Article::all();
+		return $articles;
+	}
+
 	public function show($id) {
 		$article = Article::findOrFail($id);
 
@@ -51,6 +58,11 @@ class ArticlesController extends BaseController
 		return View::make('pages.tags', compact('tags'));
 	}
 
+	public function apitags() {
+		$tags = Tag::all();
+		return $tags;
+	}
+
 
 
 
@@ -59,6 +71,13 @@ class ArticlesController extends BaseController
 		// $articles = Article::all();
 
 		return View::make('articles.create');
+	}
+
+	public function edit()
+	{
+		// $articles = Article::all();
+
+		return View::make('admin.edit');
 	}
 
 

@@ -21,6 +21,12 @@ Route::get('/home-2', ['as'=> 'home2', 'uses'=>'PageController@home2']);
 Route::get('/home-3', ['as'=> 'home3', 'uses'=>'PageController@home3']);
 
 
+Route::get('api/articles','ArticlesController@apiarticles');
+Route::get('api/tags','ArticlesController@apitags');
+Route::get('api/categories','ArticlesController@apicategories');
+
+
+
 Route::get('articles', 'ArticlesController@index');
 
 Route::get('articles/{id}', 'ArticlesController@show');
@@ -41,3 +47,5 @@ Route::get('{category}/articles/{title}', ['as'=>'category.articles.show', 'uses
 /*return Article::with('tags')->has('tags')->get();   Awesome route*/
 
 Route::get('/admin/create', 'ArticlesController@create');
+Route::get('/admin/edit', 'ArticlesController@edit');
+
