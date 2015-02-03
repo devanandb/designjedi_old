@@ -37,9 +37,9 @@
 					<fieldset data-uk-margin>
 				        <legend>It belongs to?</legend>
 				        <div class="uk-button-group" data-uk-button-radio="">
-                            <button ng-click="article.type='leadership'" class="uk-button">Leadership</button>
-                            <button ng-click="article.type='design'" class="uk-button">Design</button>
-                            <button ng-click="article.type='life'" class="uk-button">Life</button>
+                            <button ng-click="article.category_id=1" class="uk-button">Leadership</button>
+                            <button ng-click="article.category_id=2" class="uk-button">Design</button>
+                            <button ng-click="article.category_id=3" class="uk-button">Life</button>
                         </div>
 				        
 				    </fieldset>
@@ -65,14 +65,14 @@
 
 				    <fieldset data-uk-margin>
 				        <legend>Add Article</legend>
-				        <textarea ng-model="article.description" cols="" rows="10" class="uk-width-1-1 uk-form-large" placeholder=""></textarea>
+				        <textarea ng-model="article.body" cols="" rows="10" class="uk-width-1-1 uk-form-large" placeholder=""></textarea>
 				    </fieldset>
 
 				    <fieldset data-uk-margin>
 				        <legend>Article status</legend>
 				        <div class="uk-button-group" data-uk-button-radio="">
-                            <button ng-click="article.publish=1" class="uk-button">Publish</button>
-                            <button ng-click="article.publish=0" class="uk-button">Publish later</button>
+                            <button ng-click="article.shown=1" class="uk-button">Publish</button>
+                            <button ng-click="article.shown=0" class="uk-button">Publish later</button>
                         </div>
 				        
 				    </fieldset>
@@ -82,7 +82,7 @@
 				    <div class="uk-text-right">
 				    	<button class="uk-button uk-button-large" type="button">Cancel</button>
 
-				    	<button ng-click="createArticle()" class="uk-button uk-button-large uk-button-success" type="button">Done</button>
+				    	<button ng-click="createArticles()" class="uk-button uk-button-large uk-button-success" type="button">Done</button>
 				    </div>
 				</div>
 			</div>

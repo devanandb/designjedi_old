@@ -1,4 +1,4 @@
-app.controller('adminCtrl', function($rootScope, $scope, $location, $http) {
+app.controller('adminCtrl', function($rootScope, $scope, $location, $http, Article) {
 	
 	
 	// $rootScope.$on('databank-ready', function() {
@@ -18,7 +18,7 @@ app.controller('adminCtrl', function($rootScope, $scope, $location, $http) {
     });
 
 	$scope.greeting = "Hello Wassup";
-	$scope.article = [];
+	$scope.article = {};
 	$scope.ctags = [];
 
 	// console.log($scope.posts);
@@ -59,14 +59,38 @@ app.controller('adminCtrl', function($rootScope, $scope, $location, $http) {
 	}
 
 
-	$scope.createArticle = function() {
+	// $scope.createArticle = function() {
 
-		$scope.article.tags = $scope.ctags;
+	// 	$scope.article.tags = $scope.ctags;
 		
-		console.log($scope.article);
+	// 	console.log($scope.article);
 
 
-	}
+	// }
+
+	$scope.createArticles = function() {
+        $scope.loading = true;
+
+        $scope.article.tags = $scope.ctags;
+        console.log($scope.article);
+
+        // save the comment. pass in comment data from the form
+        // use the function we created in our service
+        Article.save($scope.article)
+            .success(function(data) {
+
+                // if successful, we'll need to refresh the comment list
+                Article.get()
+                    .success(function(getData) {
+                        $scope.articles = getData;
+                        $scope.loading = false;
+                    });
+
+            })
+            .error(function(data) {
+                console.log(data);
+            });
+    };
 
 });
 

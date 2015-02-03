@@ -23,6 +23,8 @@
         {{ HTML::script('js/lib/angular.min.js') }}
 
         {{ HTML::script('js/app.js') }}
+        {{ HTML::script('js/services/articleService.js') }}
+
         {{ HTML::script('js/controllers.js') }}
 
 

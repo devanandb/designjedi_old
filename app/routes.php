@@ -22,6 +22,7 @@ Route::get('/home-3', ['as'=> 'home3', 'uses'=>'PageController@home3']);
 
 
 Route::get('api/articles','ArticlesController@apiarticles');
+Route::post('api/articles','ArticlesController@createArticle');
 Route::get('api/tags','ArticlesController@apitags');
 Route::get('api/categories','ArticlesController@apicategories');
 

@@ -1,4 +1,4 @@
-var app = angular.module('jedi', [])
+var app = angular.module('jedi', ['articleService']);
 
 
 

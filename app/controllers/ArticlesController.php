@@ -80,6 +80,19 @@ class ArticlesController extends BaseController
 		return View::make('admin.edit');
 	}
 
+	public function createArticle() {
+		Article::create(array(
+            'title' => Input::get('title'),
+            'body' => Input::get('body'),
+            'category_id' => Input::get('category_id'),
+            'shown' => Input::get('shown')
+        ));
+
+       
+    
+        return Response::json(array('success' => true));
+	}
+
 
 
 }
